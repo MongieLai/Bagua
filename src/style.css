@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin:0;padding: 0;
+}
+*::after {
+    box-sizing: border-box;
+  }
+  
+*::before {
+    box-sizing: border-box;
+  }
+#html{
+     word-wrap:break-word;
+     padding: 15px;
+}
+#bagua{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width:500px){
+    #html{
+        height: 50vh;
+        overflow: hidden;
+        padding: 5px;
+    }
+
+    #baguaWrap{
+        height: 50vh;
+    }
+
+    #bagua{
+        position: relative;;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+}
